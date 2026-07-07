@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>fr5_vision_control</name>
+  <version>0.0.0</version>
+  <description>FR5 vision-guided nasal endoscopy robot control — ROS 2 package</description>
+  <maintainer email="mio@todo.todo">mio</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Runtime dependencies -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>nasal_endoscopy_msgs</depend>
+  <depend>tf2_ros</depend>
+
+  <!-- Official fairino SDK (external, read-only) -->
+  <depend>fairino_msgs</depend>
+  <depend>fairino_hardware</depend>
+
+  <!-- System packages -->
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-mediapipe</exec_depend>
+
+  <!-- Launch dependencies -->
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

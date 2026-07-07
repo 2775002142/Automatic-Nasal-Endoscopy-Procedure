@@ -1,0 +1,16 @@
+# Outside navigation action — nostril approach
+
+# Goal
+string target_side  # "left" | "right" | "center"
+float32 max_depth_mm
+---
+# Result
+bool reached
+float32 final_depth_mm
+string final_state
+---
+# Feedback
+string current_state
+float32 current_depth_mm
+float32 target_dist_px
+float32 feature_width_px

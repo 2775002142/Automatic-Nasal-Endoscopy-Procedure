@@ -1,0 +1,7 @@
+# Set the active navigation mode
+# Request
+string mode  # "idle" | "auto_outside" | "auto_inside"
+---
+# Response
+bool success
+string message

@@ -1,0 +1,30 @@
+# Build / install / log
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# OS
+*Zone.Identifier
+.DS_Store
+Thumbs.db
+
+# Calibration (excluded from version control)
+*calibrate_handeye*
+*calibrate_camera*
+
+# Analysis / docs (internal only)
+分析文件/
+fangzhen/

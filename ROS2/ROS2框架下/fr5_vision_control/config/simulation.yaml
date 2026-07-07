@@ -1,0 +1,7 @@
+# ── Simulation parameters ──────────────────────────────────
+robot_sim_bridge:
+  ros__parameters:
+    home_pose: [0.3, 0.0, 0.3, 180.0, 0.0, 0.0]
+    state_hz: 50.0
+    motion_speed_mm_s: 50.0
+    motion_speed_deg_s: 30.0

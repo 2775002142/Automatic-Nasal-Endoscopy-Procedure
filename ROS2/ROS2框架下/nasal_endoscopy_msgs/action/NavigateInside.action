@@ -1,0 +1,19 @@
+# Inside navigation action — lumen following
+
+# Goal
+float32 max_depth_mm
+---
+# Result
+bool depth_reached
+float32 final_depth_mm
+string final_state
+float32 total_translation_dx
+float32 total_translation_dy
+---
+# Feedback
+string current_state
+float32 current_depth_mm
+float32 target_dist_px
+float32 force_magnitude
+float32 current_rotation_rx
+float32 current_rotation_ry

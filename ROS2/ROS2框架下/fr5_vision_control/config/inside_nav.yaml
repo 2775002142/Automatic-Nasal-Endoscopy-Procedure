@@ -1,0 +1,55 @@
+# ── Inside navigation parameters ───────────────────────────
+move_inside_node:
+  ros__parameters:
+    # Camera & connection
+    video_idx: "0"
+    simulate: false
+
+    # Depth limits
+    max_depth_mm: 50.0
+
+    # Hysteresis thresholds (pixels)
+    align_dist_start_px: 180.0
+    align_dist_stop_px: 130.0
+
+    # Frame-count debounce
+    min_rotate_frames: 2
+    min_advance_frames: 5
+    transition_frames: 10
+
+    # Motion step sizes
+    z_advance_step_mm: 0.5
+    retreat_step_mm: -0.5
+
+    # Blocked / retreat timing
+    blocked_timeout_sec: 1.5
+
+    # Filter parameters
+    ema_alpha: 0.25
+    kalman_process_noise: 0.05
+    kalman_measure_noise: 4.0
+
+    # Kalman prediction on loss
+    kalman_predict_max_frames: 5
+    kalman_predict_force_scale: 0.3
+
+    # Blind-entry strategy
+    blind_entry_step_mm: 2.0
+    blind_entry_max_mm: 20.0
+    blind_entry_interval_sec: 0.15
+    blind_goal_confirm_frames: 20
+
+    # Safety caps
+    max_total_rotation_deg: 2.0
+
+    # ── ForceToMotionConverter ──────────────────────────────
+    converter_force_deadzone: 10.0
+    converter_max_force_for_scale: 1150.0
+    converter_min_rotation_gain: 0.001
+    converter_max_rotation_gain: 0.012
+    converter_rotation_gain_curve_factor: 0.6
+    converter_max_rotation_deg: 0.2
+    converter_min_translate_step_mm: 0.02
+    converter_max_translate_step_mm: 0.15
+    converter_translate_step_curve_factor: 0.7
+    converter_max_translate_per_phase_mm: 1.0

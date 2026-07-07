@@ -1,0 +1,45 @@
+# ── Outside navigation parameters ──────────────────────────
+move_outside_node:
+  ros__parameters:
+    # Camera & connection
+    video_idx: "1"
+    robot_ip: "192.168.58.2"
+    simulate: false
+
+    # Hysteresis thresholds (pixels)
+    align_tolerance_enter: 20.0
+    align_tolerance_exit: 10.0
+    min_align_frames: 3
+    min_approach_frames: 3
+    transition_frames: 5
+
+    # Motion limits
+    xy_max_step_mm: 2.0
+    z_max_step_mm: 2.0
+    z_approach_step: 2.0
+    xy_damping: 0.6
+    max_z_total_mm: 150.0
+    retreat_step_mm: 20.0
+
+    # Outlier rejection
+    max_jump_px: 90
+    max_width_jump_ratio: 0.40
+
+    # Timing
+    lost_timeout_sec: 3.0
+    filter_reset_timeout: 2.0
+    min_move_interval: 0.1
+
+    # Targeting
+    target_selection: "left"         # "left" | "right" | "center"
+    nostril_distance_mm: 12.0
+    target_width_threshold: 300      # arrival criterion (px)
+
+    # Filter alphas
+    pos_ema_alpha: 0.35
+    width_ema_alpha: 0.25
+    nostril_ema_alpha: 0.25
+
+    # Safety
+    max_consecutive_fails: 3
+    min_effective_move_mm: 0.1
